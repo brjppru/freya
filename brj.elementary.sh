@@ -7,8 +7,7 @@
 
 exit 0
 
-sudo apt-get -y install aptitude
-sudo apt-get -y install cowsay
+sudo apt-get -y install aptitude cowsay curl dpkg
 
 # auto repos
 sudo add-apt-repository -y ppa:mc3man/trusty-media
@@ -24,9 +23,10 @@ sudo add-apt-repository -y ppa:webupd8team/sublime-text-2
 sudo add-apt-repository -y ppa:me-davidsansome/clementine
 sudo add-apt-repository -y ppa:linrunner/tlp
 sudo add-apt-repository -y ppa:otto-kesselgulasch/gimp
-sudo add-apt-repository -y ppa:webupd8team/java
+#sudo add-apt-repository -y ppa:webupd8team/java
 sudo add-apt-repository -y ppa:transmissionbt/ppa
 sudo add-apt-repository -y ppa:videolan/stable-daily
+sudo add-apt-repository -y ppa:ubuntu-wine/ppa
 
 # no ppa reps
 sudo apt-add-repository -y "deb http://archive.canonical.com/ubuntu/ precise partner"
@@ -67,15 +67,19 @@ sudo apt-get install -y dkms
 sudo apt-get install -y guake doublecmd-gtk xournal powertop preload smartmontools ethtool qt4-qtconfig dconf-tools
 sudo apt-get install -y molly-guard openssh-server htop firefox uget adobe-flashplugin mc
 sudo apt-get install -y unace unrar zip unzip xz-utils p7zip-full p7zip-rar sharutils rar uudeview mpack arj cabextract file-roller
+sudo apt-get install -y tshark
 
 # 2gis
-sudo apt-get install 2gis
+sudo apt-get install -y 2gis
 
 # y-ppa 
 sudo apt-get install -y y-ppa-manager
 
 # git
-sudo apt-get install git
+sudo apt-get -y install git
+
+# winehq
+sudo apt-get -y install wine
 
 # rss
 sudo apt-get install -y quiterss
@@ -106,9 +110,9 @@ sudo apt-get install -y sublime-text
 # codec
 sudo apt-get install -y ubuntu-restricted-extras ffmpeg x264 gstreamer0.10-ffmpeg libdvdread4
 sudo /usr/share/doc/libdvdread4/install-css.sh
-sudo apt-get -y install vlc
+sudo apt-get -y install vlc browser-plugin-vlc
 
-#Install the Clementine Music Player
+# install the Clementine Music Player
 sudo apt-get install -y clementine
 
 # skype
@@ -119,11 +123,21 @@ sudo apt-get install -y skype
 sudo apt-get install -y tlp tlp-rdw
 sudo tlp start
 
-#Install Gimp
+# install Gimp
 sudo apt-get install -y gimp gimp-data gimp-plugin-registry gimp-data-extras
 
+# install transmisson
+sudo apt-get -y install transmission minissdpd natpmp-utils
+
 #Install Java 7
-sudo apt-get install -y oracle-java7-installer
+#sudo apt-get install -y oracle-java7-installer
+
+# deb install, no ppa :-(
+curl -o /tmp/rt.deb https://www.rescuetime.com/installers/rescuetime_current_amd64.deb
+curl -o /tmp/xm.deb http://www.xmind.net/xmind/downloads/xmind-linux-3.5.1.201411201906_amd64.deb
+dpkg -i /tmp/rt.dev
+dpkg -i /tmp/xm.deb
+sudo apt-get -f install
 
 # big clean up
 
