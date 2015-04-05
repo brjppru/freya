@@ -65,7 +65,7 @@ sudo apt-get install -y dkms
 
 # install my own
 sudo apt-get install -y guake doublecmd-gtk xournal powertop preload smartmontools ethtool qt4-qtconfig dconf-tools
-sudo apt-get install -y molly-guard openssh-server htop firefox uget adobe-flashplugin
+sudo apt-get install -y molly-guard openssh-server htop firefox uget adobe-flashplugin mc
 sudo apt-get install -y unace unrar zip unzip xz-utils p7zip-full p7zip-rar sharutils rar uudeview mpack arj cabextract file-roller
 
 # 2gis
