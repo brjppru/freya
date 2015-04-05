@@ -27,6 +27,7 @@ sudo add-apt-repository -y ppa:otto-kesselgulasch/gimp
 sudo add-apt-repository -y ppa:transmissionbt/ppa
 sudo add-apt-repository -y ppa:videolan/stable-daily
 sudo add-apt-repository -y ppa:ubuntu-wine/ppa
+sudo add-apt-repository -y ppa:osmoma/audio-recorder
 
 # no ppa reps
 sudo apt-add-repository -y "deb http://archive.canonical.com/ubuntu/ precise partner"
@@ -128,6 +129,9 @@ sudo apt-get install -y gimp gimp-data gimp-plugin-registry gimp-data-extras
 
 # install transmisson
 sudo apt-get -y install transmission minissdpd natpmp-utils
+
+# install audio-recorder
+sudo apt-get -y install audio-recorder
 
 #Install Java 7
 #sudo apt-get install -y oracle-java7-installer
