@@ -17,6 +17,7 @@ sudo add-apt-repository -y ppa:git-core/ppa
 sudo add-apt-repository -y ppa:quiterss/quiterss
 sudo add-apt-repository -y ppa:keepassx/daily
 sudo add-apt-repository -y ppa:atareao/atareao
+sudo add-apt-repository -y ppa:atareao/telegram
 sudo add-apt-repository -y ppa:libreoffice/ppa
 sudo add-apt-repository -y ppa:costales/anoise
 sudo add-apt-repository -y ppa:webupd8team/sublime-text-2
@@ -66,7 +67,8 @@ sudo apt-get install -y dkms
 
 # install my own
 sudo apt-get install -y guake doublecmd-gtk xournal powertop preload smartmontools ethtool qt4-qtconfig dconf-tools
-sudo apt-get install -y molly-guard openssh-server htop firefox uget adobe-flashplugin mc
+sudo apt-get install -y molly-guard openssh-server htop firefox uget mc
+#adobe-flashplugin
 sudo apt-get install -y unace unrar zip unzip xz-utils p7zip-full p7zip-rar sharutils rar uudeview mpack arj cabextract file-roller
 sudo apt-get install -y tshark
 
@@ -133,14 +135,23 @@ sudo apt-get -y install transmission minissdpd natpmp-utils
 # install audio-recorder
 sudo apt-get -y install audio-recorder
 
+# telegramm 
+sudo apt-get -y install telegram
+
 #Install Java 7
 #sudo apt-get install -y oracle-java7-installer
 
 # deb install, no ppa :-(
+
+# fetch
 curl -o /tmp/rt.deb https://www.rescuetime.com/installers/rescuetime_current_amd64.deb
 curl -o /tmp/xm.deb http://www.xmind.net/xmind/downloads/xmind-linux-3.5.1.201411201906_amd64.deb
-dpkg -i /tmp/rt.dev
+curl -o /tmp/yb.deb -L "https://browser.yandex.ru/download/?beta=1&os=linux&x64=1&package=deb&full=1"
+
+# install
+dpkg -i /tmp/rt.deb
 dpkg -i /tmp/xm.deb
+dpkg -i /tmp/yb.deb
 sudo apt-get -f install
 
 # big clean up
