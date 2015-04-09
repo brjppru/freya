@@ -5,8 +5,6 @@
 # http://brj.pp.ru/
 #
 
-exit 0
-
 sudo apt-get -y install aptitude cowsay curl dpkg
 
 # auto repos
@@ -59,6 +57,9 @@ doupme() {
 #
 
 doupme
+
+# russifity
+sudo apt-get install -y language-pack-ru
 
 # big kernel up ;-)
 sudo apt-get install -y --install-recommends linux-generic-lts-utopic xserver-xorg-lts-utopic libgl1-mesa-glx-lts-utopic libegl1-mesa-drivers-lts-utopic
@@ -140,19 +141,6 @@ sudo apt-get -y install telegram
 
 #Install Java 7
 #sudo apt-get install -y oracle-java7-installer
-
-# deb install, no ppa :-(
-
-# fetch
-curl -o /tmp/rt.deb https://www.rescuetime.com/installers/rescuetime_current_amd64.deb
-curl -o /tmp/xm.deb http://www.xmind.net/xmind/downloads/xmind-linux-3.5.1.201411201906_amd64.deb
-curl -o /tmp/yb.deb -L "https://browser.yandex.ru/download/?beta=1&os=linux&x64=1&package=deb&full=1"
-
-# install
-dpkg -i /tmp/rt.deb
-dpkg -i /tmp/xm.deb
-dpkg -i /tmp/yb.deb
-sudo apt-get -f install
 
 # big clean up
 
