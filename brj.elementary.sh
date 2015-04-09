@@ -27,6 +27,8 @@ sudo add-apt-repository -y ppa:transmissionbt/ppa
 sudo add-apt-repository -y ppa:videolan/stable-daily
 sudo add-apt-repository -y ppa:ubuntu-wine/ppa
 sudo add-apt-repository -y ppa:osmoma/audio-recorder
+sudo add-apt-repository -y ppa:pidgin-developers/ppa
+sudo apt-add-repository -y ppa:purple-vk-plugin/dev
 
 # no ppa reps
 sudo apt-add-repository -y "deb http://archive.canonical.com/ubuntu/ precise partner"
@@ -102,8 +104,7 @@ sudo apt-get install -y libreoffice libreoffice-gtk libreoffice-pdfimport libreo
 sudo apt-get install -y libreoffice-lightproof-ru-ru libreoffice-help-ru libreoffice-l10n-ru 
 
 # anoise
-sudo apt-get -y install anoise
-sudo apt-get -y install anoise-community-extension1
+sudo apt-get -y install anoise anoise-community-extension1
 
 # tweaker
 sudo apt-get install -y elementary-tweaks
@@ -120,14 +121,14 @@ sudo apt-get -y install vlc browser-plugin-vlc
 sudo apt-get install -y clementine
 
 # skype
-sudo apt-get install -y gtk2-engines-murrine:i386 gtk2-engines-pixbuf:i386 sni-qt:i386
+#sudo apt-get install -y gtk2-engines-murrine:i386 gtk2-engines-pixbuf:i386 sni-qt:i386
 sudo apt-get install -y skype
 
 # tlp
 sudo apt-get install -y tlp tlp-rdw
 sudo tlp start
 
-# install Gimp
+# install gimp
 sudo apt-get install -y gimp gimp-data gimp-plugin-registry gimp-data-extras
 
 # install transmisson
@@ -138,6 +139,9 @@ sudo apt-get -y install audio-recorder
 
 # telegramm 
 sudo apt-get -y install telegram
+
+# pidgin
+sudo apt-get -y install pidgin purple-vk-plugin pidgin-plugin-pack
 
 #Install Java 7
 #sudo apt-get install -y oracle-java7-installer
