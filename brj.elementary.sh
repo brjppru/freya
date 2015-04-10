@@ -34,6 +34,7 @@ sudo apt-add-repository -y ppa:purple-vk-plugin/dev
 sudo apt-add-repository -y "deb http://archive.canonical.com/ubuntu/ precise partner"
 sudo apt-add-repository -y "deb http://www.tataranovich.com/debian utopic nightly"
 sudo apt-add-repository -y  "deb http://deb.2gis.ru/ trusty non-free"
+sudo apt-add-repository -y  "deb http://dl.google.com/linux/chrome/deb/ stable main"
 
 # receive keys
 sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com `sudo aptitude update 2>&1 | grep -o '[0-9A-Z]\{16\}$' | xargs`
@@ -145,6 +146,9 @@ sudo apt-get -y install pidgin purple-vk-plugin pidgin-plugin-pack
 
 #Install Java 7
 #sudo apt-get install -y oracle-java7-installer
+
+# install chrome stable
+sudo apt-get install -y google-chrome-stable
 
 # big clean up
 
