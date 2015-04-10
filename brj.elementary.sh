@@ -43,7 +43,7 @@ sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com `sudo aptitude upd
 # clean up
 
 # Clean-up System
-sudo apt-get -y purge midori-granite noise software-center bluez modemmanager
+sudo apt-get -y purge midori-granite noise software-center bluez modemmanager scratch-text-editor audience
 
 doupme() {
 
