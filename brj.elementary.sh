@@ -34,8 +34,8 @@ sudo add-apt-repository -y ppa:birdie-team/stable
 # no ppa reps
 sudo apt-add-repository -y "deb http://archive.canonical.com/ubuntu/ precise partner"
 sudo apt-add-repository -y "deb http://www.tataranovich.com/debian utopic nightly"
-sudo apt-add-repository -y  "deb http://deb.2gis.ru/ trusty non-free"
-sudo apt-add-repository -y  "deb http://dl.google.com/linux/chrome/deb/ stable main"
+sudo apt-add-repository -y "deb http://deb.2gis.ru/ trusty non-free"
+sudo apt-add-repository -y "deb http://dl.google.com/linux/chrome/deb/ stable main"
 
 # receive keys
 sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com `sudo aptitude update 2>&1 | grep -o '[0-9A-Z]\{16\}$' | xargs`
@@ -47,12 +47,12 @@ sudo apt-get -y purge midori-granite noise software-center bluez modemmanager sc
 
 doupme() {
 
-    cowsay -d "update"  && sudo apt-get -y update
-    cowsay -d "dist-up" && sudo apt-get -y dist-upgrade
+    cowsay -d "update"     && sudo apt-get -y update
+    cowsay -d "dist-up"    && sudo apt-get -y dist-upgrade
     cowsay -d "force deps" && sudo apt-get -y -f install
-    cowsay -d "remove"	&& sudo apt-get -y autoremove
-    cowsay -d "autoclean"	&& sudo apt-get -y autoclean
-    cowsay -d "clean" && sudo apt-get -y clean
+    cowsay -d "remove"	   && sudo apt-get -y autoremove
+    cowsay -d "autoclean"  && sudo apt-get -y autoclean
+    cowsay -d "clean"      && sudo apt-get -y clean
 
 }
 
@@ -67,15 +67,14 @@ sudo apt-get install -y language-pack-en language-pack-ru
 
 # big kernel up ;-)
 sudo apt-get install -y --install-recommends linux-generic-lts-utopic xserver-xorg-lts-utopic libgl1-mesa-glx-lts-utopic libegl1-mesa-drivers-lts-utopic
-sudo apt-get install -y linux-firmware-nonfree
-sudo apt-get install -y dkms
+sudo apt-get install -y linux-firmware-nonfree dkms
 
 # install my own
 sudo apt-get install -y guake doublecmd-gtk xournal powertop preload smartmontools ethtool qt4-qtconfig dconf-tools
-sudo apt-get install -y molly-guard openssh-server htop firefox uget mc
-#adobe-flashplugin
+sudo apt-get install -y molly-guard openssh-server htop firefox uget mc preload 
 sudo apt-get install -y unace unrar zip unzip xz-utils p7zip-full p7zip-rar sharutils rar uudeview mpack arj cabextract file-roller
-sudo apt-get install -y tshark
+sudo apt-get install -y tshark furiusisomount sshfs curlftpfs
+#adobe-flashplugin
 
 # 2gis
 sudo apt-get install -y 2gis
@@ -102,8 +101,7 @@ sudo apt-get install -y remmina remmina-plugin-rdp
 sudo apt-get install -y pushbullet-indicator
 
 # libreoffice
-sudo apt-get install -y libreoffice libreoffice-gtk libreoffice-pdfimport libreoffice-avmedia-backend-gstreamer libreoffice-style-sifr
-sudo apt-get install -y libreoffice-lightproof-ru-ru libreoffice-help-ru libreoffice-l10n-ru 
+sudo apt-get install -y libreoffice libreoffice-gtk libreoffice-pdfimport libreoffice-avmedia-backend-gstreamer libreoffice-style-sifr libreoffice-lightproof-ru-ru libreoffice-help-ru libreoffice-l10n-ru 
 
 # anoise
 sudo apt-get -y install anoise anoise-community-extension1
