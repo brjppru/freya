@@ -63,7 +63,7 @@ doupme() {
 doupme
 
 # russifity
-sudo apt-get install -y language-pack-ru
+sudo apt-get install -y language-pack-en language-pack-ru
 
 # big kernel up ;-)
 sudo apt-get install -y --install-recommends linux-generic-lts-utopic xserver-xorg-lts-utopic libgl1-mesa-glx-lts-utopic libegl1-mesa-drivers-lts-utopic
