@@ -29,6 +29,7 @@ sudo add-apt-repository -y ppa:ubuntu-wine/ppa
 sudo add-apt-repository -y ppa:osmoma/audio-recorder
 sudo add-apt-repository -y ppa:pidgin-developers/ppa
 sudo apt-add-repository -y ppa:purple-vk-plugin/dev
+sudo add-apt-repository -y ppa:birdie-team/stable
 
 # no ppa reps
 sudo apt-add-repository -y "deb http://archive.canonical.com/ubuntu/ precise partner"
@@ -149,6 +150,10 @@ sudo apt-get -y install pidgin purple-vk-plugin pidgin-plugin-pack
 
 # install chrome stable
 sudo apt-get install -y google-chrome-stable
+sudo rm /etc/apt/sources.list.d/google-chrome.list  
+
+# birdie
+sudo apt-get -y install birdie
 
 # big clean up
 
