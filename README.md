@@ -1,7 +1,7 @@
 
 The brj elementary bolgenos script ;-)
 
-why freya? being based on Ubuntu 14.04 LTS, supported until April 2019... that's all.
+Why freya? Being based on Ubuntu 14.04 LTS, supported until April 2019... that's all.
 
 Get release here: http://elementary.io/ 
 (hint: type 0 for donation + download)
@@ -9,6 +9,7 @@ Get release here: http://elementary.io/
 Get nightly bilds here: http://builds.rikka.io/
 
 i386 iso: http://sourceforge.net/projects/elementaryos/files/stable/elementaryos-freya-i386.20150411.iso/download
+
 x64 iso:  http://sourceforge.net/projects/elementaryos/files/stable/elementaryos-freya-amd64.20150411.iso/download
 
 My wiki freya page: http://brj.pp.ru/baza/2015/unix/elementary-freya for os and iface tweaks
