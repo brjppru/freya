@@ -5,6 +5,8 @@
 # http://brj.pp.ru/
 #
 
+exit 0
+
 
 # fast-apt
 sudo add-apt-repository -y ppa:saiarcot895/myppa
