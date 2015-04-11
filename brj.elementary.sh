@@ -5,7 +5,14 @@
 # http://brj.pp.ru/
 #
 
-sudo apt-get -y install aptitude cowsay curl dpkg
+
+# fast-apt
+sudo add-apt-repository -y ppa:saiarcot895/myppa
+sudo apt-get -y update
+sudo apt-get -y install apt-fast
+
+# req to install
+sudo apt-fast -y install aptitude cowsay curl dpkg aria2
 
 # auto repos
 sudo add-apt-repository -y ppa:mc3man/trusty-media
