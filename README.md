@@ -1,12 +1,15 @@
 
-# The brj freya elementary bolgenos script ;-)
+# The brj freya elementary
+
+## Bolgenos? 
+
+Yes. This is 150% bolgenos script. 
 
 ## Why use freya? 
 
-I have a good old noname netbook in use since 2011.
-Intel Atom N570(1.66), 2048, 320, WiFi, BT, Cam, 5300mAh it's still worked about 4 hours on batt from 4 year ago.
-In 2015 XP x32 or Win7 x32 + chrome + antivirus make me cause to weep tears of blood then i use it.
-Freya is fast and being based on Ubuntu 14.04 LTS, supported until April 2019... that's all.
+I have a good old noname netbook purchased in 2011 Intel Atom N570(1.66), 2048, 320, WiFi, BT, Cam, 5300mAh.
+In 2015 it's still worked about 4 hours on batt! 4 year ago... setup today XP x32 or Win7 x32 or win 8.1 x32 (sic!) and chrome + antivirus + skype + dropbox makes me cry and cry tears of blood when I try to use wintel platform. 
+Too slowly. Freya is fast and being based on Ubuntu 14.04 LTS, supported until April 2019... in any case, enough perhaps to the death of this notebook. That's all.
 
 ## download
 
