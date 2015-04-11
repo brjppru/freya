@@ -1,6 +1,8 @@
 
 The brj elementary bolgenos script ;-)
 
+why freya? being based on Ubuntu 14.04 LTS, supported until April 2019... that's all.
+
 Get release here: http://elementary.io/ 
 (hint: type 0 for donation + download)
 
