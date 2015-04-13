@@ -1,0 +1,5 @@
+MD5  0ad75a048a89ee0bde5d7d333e5d5baf		elementaryos-freya-i386.20150411.iso
+SHA1 4b82a9566c37464ca85eb29181e05cf538dd67f0	elementaryos-freya-i386.20150411.iso
+
+MD5  742cc5b2c21bb1872954b13b7b2091a3  	  	elementaryos-freya-amd64.20150411.iso
+SHA1 ff02eec5cba2c060fd3a5ac85b48d4075bb4f1a3   elementaryos-freya-amd64.20150411.iso
