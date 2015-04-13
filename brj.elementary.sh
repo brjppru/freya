@@ -5,7 +5,7 @@
 # http://brj.pp.ru/
 #
 
-exit 0
+sudo apt-get -y update
 
 # first install fast-apt
 sudo add-apt-repository -y ppa:saiarcot895/myppa
@@ -71,96 +71,96 @@ doupme() {
 doupme
 
 # russifity
-sudo apt-get install -y language-pack-en language-pack-ru
+sudo apt-fast install -y language-pack-en language-pack-ru
 
 # big kernel up ;-)
-sudo apt-get install -y --install-recommends linux-generic-lts-utopic xserver-xorg-lts-utopic libgl1-mesa-glx-lts-utopic libegl1-mesa-drivers-lts-utopic
-sudo apt-get install -y linux-firmware-nonfree dkms
+sudo apt-fast install -y --install-recommends linux-generic-lts-utopic xserver-xorg-lts-utopic libgl1-mesa-glx-lts-utopic libegl1-mesa-drivers-lts-utopic
+sudo apt-fast install -y linux-firmware-nonfree dkms
 
 # install my own
-sudo apt-get install -y guake glipper doublecmd-gtk xournal powertop preload smartmontools ethtool qt4-qtconfig dconf-tools
-sudo apt-get install -y molly-guard openssh-server htop firefox uget mc preload
-sudo apt-get install -y unace unrar zip unzip xz-utils p7zip-full p7zip-rar sharutils rar uudeview mpack arj cabextract file-roller
-sudo apt-get install -y tshark furiusisomount sshfs curlftpfs
-#sudo apt-get install -y adobe-flashplugin
+sudo apt-fast install -y guake glipper doublecmd-gtk xournal powertop preload smartmontools ethtool qt4-qtconfig dconf-tools
+sudo apt-fast install -y molly-guard openssh-server htop firefox uget mc preload
+sudo apt-fast install -y unace unrar zip unzip xz-utils p7zip-full p7zip-rar sharutils rar uudeview mpack arj cabextract file-roller
+sudo apt-fast install -y tshark furiusisomount sshfs curlftpfs
+#sudo apt-fast install -y adobe-flashplugin
 
 # 2gis
-sudo apt-get install -y 2gis
+sudo apt-fast install -y 2gis
 
 # y-ppa 
-sudo apt-get install -y y-ppa-manager
+sudo apt-fast install -y y-ppa-manager
 
 # git
-sudo apt-get -y install git
+sudo apt-fast -y install git
 
 # winehq
-sudo apt-get -y install wine
+sudo apt-fast -y install wine
 
 # rss
-sudo apt-get install -y quiterss
+sudo apt-fast install -y quiterss
 
 # kepasa
-sudo apt-get install -y keepassx
+sudo apt-fast install -y keepassx
 
 # rdp
-sudo apt-get install -y remmina remmina-plugin-rdp
+sudo apt-fast install -y remmina remmina-plugin-rdp
 
 # pushbullet
-sudo apt-get install -y pushbullet-indicator
+sudo apt-fast install -y pushbullet-indicator
 
 # libreoffice
-sudo apt-get install -y libreoffice libreoffice-gtk libreoffice-pdfimport libreoffice-avmedia-backend-gstreamer libreoffice-style-sifr libreoffice-lightproof-ru-ru libreoffice-help-ru libreoffice-l10n-ru 
+sudo apt-fast install -y libreoffice libreoffice-gtk libreoffice-pdfimport libreoffice-avmedia-backend-gstreamer libreoffice-style-sifr libreoffice-lightproof-ru-ru libreoffice-help-ru libreoffice-l10n-ru 
 
 # anoise
-sudo apt-get -y install anoise anoise-community-extension1
+sudo apt-fast -y install anoise anoise-community-extension1
 
 # tweaker
-sudo apt-get install -y elementary-tweaks
+sudo apt-fast install -y elementary-tweaks
 
 # sublime2
-sudo apt-get install -y sublime-text
+sudo apt-fast install -y sublime-text
 
 # codec
-sudo apt-get install -y ubuntu-restricted-extras ffmpeg x264 gstreamer0.10-ffmpeg libdvdread4
+sudo apt-fast install -y ubuntu-restricted-extras ffmpeg x264 gstreamer0.10-ffmpeg libdvdread4
 sudo /usr/share/doc/libdvdread4/install-css.sh
-sudo apt-get -y install vlc browser-plugin-vlc
+sudo apt-fast -y install vlc browser-plugin-vlc
 
 # install the Clementine Music Player
-sudo apt-get install -y clementine
+sudo apt-fast install -y clementine
 
 # skype
-#sudo apt-get install -y gtk2-engines-murrine:i386 gtk2-engines-pixbuf:i386 sni-qt:i386
-sudo apt-get install -y skype
+#sudo apt-fast install -y gtk2-engines-murrine:i386 gtk2-engines-pixbuf:i386 sni-qt:i386
+sudo apt-fast install -y skype
 
 # tlp
-sudo apt-get install -y tlp tlp-rdw
+sudo apt-fast install -y tlp tlp-rdw
 sudo tlp start
 
 # install gimp
-sudo apt-get install -y gimp gimp-data gimp-plugin-registry gimp-data-extras
-sudo apt-get install -y mypaint
+sudo apt-fast install -y gimp gimp-data gimp-plugin-registry gimp-data-extras
+sudo apt-fast install -y mypaint
 
 # install transmisson
-sudo apt-get -y install transmission minissdpd natpmp-utils
+sudo apt-fast -y install transmission minissdpd natpmp-utils
 
 # install audio-recorder
-sudo apt-get -y install audio-recorder
+sudo apt-fast -y install audio-recorder
 
 # telegramm 
-sudo apt-get -y install telegram
+sudo apt-fast -y install telegram
 
 # pidgin
-sudo apt-get -y install pidgin purple-vk-plugin pidgin-plugin-pack
+sudo apt-fast -y install pidgin purple-vk-plugin pidgin-plugin-pack
 
 #Install Java 7
-#sudo apt-get install -y oracle-java7-installer
+#sudo apt-fast install -y oracle-java7-installer
 
 # install chrome stable
-sudo apt-get install -y google-chrome-stable
+sudo apt-fast install -y google-chrome-stable
 #sudo rm /etc/apt/sources.list.d/google-chrome.list  
 
 # birdie
-sudo apt-get -y install birdie
+sudo apt-fast -y install birdie
 
 # big clean up
 
