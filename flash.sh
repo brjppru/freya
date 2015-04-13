@@ -2,7 +2,7 @@
 
 exit 0
 
-# vdpau 
+# vdpau
 sudo apt-get install libvdpau1 vdpau-va-driver
 sudo mkdir /etc/adobe
 sudo echo -e "EnableLinuxHWVideoDecode = 1\nOverrideGPUValidation = 1" | sudo tee /etc/adobe/mms.cfg

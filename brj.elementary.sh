@@ -7,7 +7,7 @@
 
 exit 0
 
-# fast-apt
+# first install fast-apt
 sudo add-apt-repository -y ppa:saiarcot895/myppa
 sudo apt-get -y update
 sudo apt-get -y install apt-fast
@@ -50,7 +50,7 @@ sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com `sudo aptitude upd
 
 # clean up
 
-# Clean-up System
+# Clean-up base system, not need it
 sudo apt-get -y purge midori-granite noise software-center bluez modemmanager scratch-text-editor audience
 
 doupme() {
@@ -78,11 +78,11 @@ sudo apt-get install -y --install-recommends linux-generic-lts-utopic xserver-xo
 sudo apt-get install -y linux-firmware-nonfree dkms
 
 # install my own
-sudo apt-get install -y guake doublecmd-gtk xournal powertop preload smartmontools ethtool qt4-qtconfig dconf-tools
-sudo apt-get install -y molly-guard openssh-server htop firefox uget mc preload 
+sudo apt-get install -y guake glipper doublecmd-gtk xournal powertop preload smartmontools ethtool qt4-qtconfig dconf-tools
+sudo apt-get install -y molly-guard openssh-server htop firefox uget mc preload
 sudo apt-get install -y unace unrar zip unzip xz-utils p7zip-full p7zip-rar sharutils rar uudeview mpack arj cabextract file-roller
 sudo apt-get install -y tshark furiusisomount sshfs curlftpfs
-#adobe-flashplugin
+#sudo apt-get install -y adobe-flashplugin
 
 # 2gis
 sudo apt-get install -y 2gis
@@ -138,6 +138,7 @@ sudo tlp start
 
 # install gimp
 sudo apt-get install -y gimp gimp-data gimp-plugin-registry gimp-data-extras
+sudo apt-get install -y mypaint
 
 # install transmisson
 sudo apt-get -y install transmission minissdpd natpmp-utils
@@ -156,7 +157,7 @@ sudo apt-get -y install pidgin purple-vk-plugin pidgin-plugin-pack
 
 # install chrome stable
 sudo apt-get install -y google-chrome-stable
-sudo rm /etc/apt/sources.list.d/google-chrome.list  
+#sudo rm /etc/apt/sources.list.d/google-chrome.list  
 
 # birdie
 sudo apt-get -y install birdie
