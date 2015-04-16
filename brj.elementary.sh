@@ -5,6 +5,8 @@
 # http://brj.pp.ru/
 #
 
+exit 0
+
 sudo apt-get -y update
 
 # first install fast-apt
@@ -38,6 +40,7 @@ sudo add-apt-repository -y ppa:osmoma/audio-recorder
 sudo add-apt-repository -y ppa:pidgin-developers/ppa
 sudo apt-add-repository -y ppa:purple-vk-plugin/dev
 sudo add-apt-repository -y ppa:birdie-team/stable
+sudo add-apt-repository -y ppa:yorba/ppa
 
 # no ppa reps
 sudo apt-add-repository -y "deb http://archive.canonical.com/ubuntu/ precise partner"
@@ -74,11 +77,10 @@ doupme
 sudo apt-fast install -y language-pack-en language-pack-ru
 
 # big kernel up ;-)
-sudo apt-fast install -y --install-recommends linux-generic-lts-utopic xserver-xorg-lts-utopic libgl1-mesa-glx-lts-utopic libegl1-mesa-drivers-lts-utopic
-sudo apt-fast install -y linux-firmware-nonfree dkms
+sudo apt-fast install -y --install-recommends linux-generic-lts-utopic xserver-xorg-lts-utopic libgl1-mesa-glx-lts-utopic libegl1-mesa-drivers-lts-utopic linux-firmware-nonfree dkms
 
 # install my own
-sudo apt-fast install -y guake glipper doublecmd-gtk xournal powertop preload smartmontools ethtool qt4-qtconfig dconf-tools
+sudo apt-fast install -y gdebi guake glipper doublecmd-gtk xournal powertop preload smartmontools ethtool qt4-qtconfig dconf-tools
 sudo apt-fast install -y molly-guard openssh-server htop firefox uget mc preload
 sudo apt-fast install -y unace unrar zip unzip xz-utils p7zip-full p7zip-rar sharutils rar uudeview mpack arj cabextract file-roller
 sudo apt-fast install -y tshark furiusisomount sshfs curlftpfs
@@ -155,12 +157,17 @@ sudo apt-fast -y install pidgin purple-vk-plugin pidgin-plugin-pack
 #Install Java 7
 #sudo apt-fast install -y oracle-java7-installer
 
-# install chrome stable
+# install chrome stable, uninstall repo, becouse chrome has add one after install
 sudo apt-fast install -y google-chrome-stable
 #sudo rm /etc/apt/sources.list.d/google-chrome.list  
+sudo apt-add-repository -y -r "deb http://dl.google.com/linux/chrome/deb/ stable main"
 
 # birdie
 sudo apt-fast -y install birdie
+
+# geary, 
+# override ppa - broken need fix with priority
+# sudo apt-get install geary=0.10.0-1~trusty1
 
 # big clean up
 
