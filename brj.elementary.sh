@@ -79,8 +79,8 @@ sudo apt-fast install -y --install-recommends linux-generic-lts-utopic xserver-x
 sudo apt-fast install -y gdebi guake glipper doublecmd-gtk xournal powertop preload smartmontools ethtool qt4-qtconfig dconf-tools
 sudo apt-fast install -y molly-guard openssh-server htop firefox uget mc preload gpicview gthumb 
 sudo apt-fast install -y unace unrar zip unzip xz-utils p7zip-full p7zip-rar sharutils rar uudeview mpack arj cabextract file-roller
-sudo apt-fast install -y tshark furiusisomount sshfs curlftpfs
-#sudo apt-fast install -y adobe-flashplugin
+sudo apt-fast install -y tshark sshfs curlftpfs 
+#sudo apt-fast install -y adobe-flashplugin furiusisomount
 
 # 2gis
 sudo apt-fast install -y 2gis
