@@ -18,3 +18,6 @@ gsettings set org.pantheon.desktop.wingpanel auto-adjust-alpha false
 gsettings set org.pantheon.desktop.wingpanel background-alpha 0.2
 killall wingpanel
 
+# /etc/xdg/tumbler/tumbler.rc  
+# disable video
+# or remove /usr/lib/x86_64-linux-gnu/tumbler-1/plugins/tumbler-ffmpeg-thumbnailer.no.so
