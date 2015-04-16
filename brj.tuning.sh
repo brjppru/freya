@@ -19,5 +19,12 @@ gsettings set org.pantheon.desktop.wingpanel background-alpha 0.2
 killall wingpanel
 
 # /etc/xdg/tumbler/tumbler.rc  
-# disable video
+# disable video in all section
 # or remove /usr/lib/x86_64-linux-gnu/tumbler-1/plugins/tumbler-ffmpeg-thumbnailer.no.so
+
+# Edit /etc/NetworkManager/NetworkManager.conf with the following command:
+# vi /etc/NetworkManager/NetworkManager.conf
+# dns=dnsmasq
+# sudo restart network-manager
+# apt-get remove resolvconf
+

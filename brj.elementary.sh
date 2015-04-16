@@ -31,7 +31,7 @@ sudo add-apt-repository -y ppa:costales/anoise
 sudo add-apt-repository -y ppa:webupd8team/sublime-text-2
 sudo add-apt-repository -y ppa:me-davidsansome/clementine
 sudo add-apt-repository -y ppa:linrunner/tlp
-sudo add-apt-repository -y ppa:otto-kesselgulasch/gimp
+#sudo add-apt-repository -y ppa:otto-kesselgulasch/gimp
 #sudo add-apt-repository -y ppa:webupd8team/java
 sudo add-apt-repository -y ppa:transmissionbt/ppa
 sudo add-apt-repository -y ppa:videolan/stable-daily
@@ -50,7 +50,6 @@ sudo apt-add-repository -y "deb http://dl.google.com/linux/chrome/deb/ stable ma
 
 # receive keys
 sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com `sudo aptitude update 2>&1 | grep -o '[0-9A-Z]\{16\}$' | xargs`
-
 
 doupme() {
 
@@ -135,7 +134,7 @@ sudo apt-fast install -y tlp tlp-rdw
 sudo tlp start
 
 # install gimp
-sudo apt-fast install -y gimp gimp-data gimp-plugin-registry gimp-data-extras
+#sudo apt-fast install -y gimp gimp-data gimp-plugin-registry gimp-data-extras
 sudo apt-fast install -y mypaint
 
 # install transmisson
