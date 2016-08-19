@@ -5,6 +5,10 @@
 
 Yes. This is 150% bolgenos script. 
 
+## Loki
+
+I migrate to loki, see https://github.com/brjppru/elementary-loki
+
 ## Why use freya?
 
 I have a good old noname netbook purchased in 2011 Intel Atom N570(1.66), 2048, 320, WiFi, BT, Cam, 5300mAh.
