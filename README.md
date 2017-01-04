@@ -1,7 +1,6 @@
-
 # The brj freya elementary
 
-## Bolgenos? 
+## Bolgenos?
 
 Yes. This is 150% bolgenos script. 
 
